@@ -6,14 +6,16 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #0b0e27;
+  background: linear-gradient(to bottom, #0b0e27, #5286e7); /* Dark blue to bright blue */
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
+  margin: 0; /* Remove default margin for better appearance */
 }
+
 
 header {
   width: 100%;
@@ -23,6 +25,7 @@ header {
   padding: 10px 0;
   display: flex;
   justify-content: center;
+  position: sticky;
 }
 
 .links {
@@ -52,7 +55,7 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -697,4 +700,157 @@ projects-container-cards{
   margin-top: 100px;
   font-size: 50px;
   margin-bottom: 100px;
+}
+.contact-form-container {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 450px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  background: #366be7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #2851b5;
+}
+.contact-title{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+.footer {
+  background: #2851b5;
+  padding: 40px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Logo Section */
+.footer-logo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Footer Links Section */
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-column a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* Social Links Section */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px; /* Spacing for alignment */
+}
+
+.footer-social a img {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+}
+
+/* App Buttons Section */
+.footer-apps {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-apps img {
+  width: 120px;
+  height: auto;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .footer-social,
+  .footer-apps {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
